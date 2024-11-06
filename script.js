@@ -17,7 +17,7 @@ const fetchImages = async(query, pageNo) => {
     const response = await fetch(url);
     const data = await response.json();
 
-    if(data.results.lenght > 0){
+    if(data.results.length > 0){
 
     data.results.forEach(photo => {
         const imageElement = document.createElement('div');
